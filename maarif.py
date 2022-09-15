@@ -54,11 +54,9 @@ time.sleep(1)
 notify('30 second initial delay')
 
 while True:
+    time.sleep(21600) # every 6 hours, notify if there are any exams
+    
     while True:        
         if notify('6 hour interval'):
             break
         time.sleep(30)
-    
-    time.sleep(21600) # every 6 hours, notify if there are any exams
-    
-
